@@ -47,4 +47,3 @@ Plan is to implement all these at least in following languages, IF there's enoug
 7. Set
 8. Stack
 9. Vector
-

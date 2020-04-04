@@ -1,0 +1,11 @@
+# Ignore all build folders
+build/
+
+# Ignore all node_modules
+node_modules/
+
+# Ignore all .lock files
+*.lock
+
+# Ignore test coverage reports
+coverage/
