@@ -6,9 +6,15 @@ describe('Vector3D unit tests', () => {
   const vector = new Vector3D({u: 4, v: 4, w: 2});
   const vector2 = new Vector3D({ u: 1, v: 2, w: 3 });
 
-  // it('constructor', () => {
-  //   const vector = new Vector3D({u: 4, v: 4, w: 2});
-  // });
+  it('constructor', () => {
+    const vector = new Vector3D({u: 4, v: 4, w: 2});
+    expect(vector).toEqual(new Vector3D({u: 4, v: 4, w: 2}));
+  });
+
+  it('empty constructor', () => {
+    const nullVector = new Vector3D();
+    expect(nullVector).toEqual(new Vector3D({u: 0, v: 0, w: 0}));
+  });
 
   it('magnitude', () => {
     expect(vector.magnitude).toBe(6);
