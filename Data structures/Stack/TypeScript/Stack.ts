@@ -32,9 +32,9 @@ class Stack<T> {
   }
 
   pop(): T | undefined {
-    if (this.sze > 0) {
-      const value = this.top?.value;
-      this.top = this.top?.next;
+    if (this.sze > 0 && this.top) {
+      const value = this.top.value;
+      this.top = this.top.next;
       this.sze -= 1;
       return value;
     } else {
