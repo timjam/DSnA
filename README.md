@@ -27,7 +27,7 @@ Plan is to implement all these at least in following languages, IF there's enoug
 6. Dijkstra's algorithm
 7. Floyd-Warshall algorithm
 8. K-Way merge
-9. [Various soring algorithms](Algorithms/Sorts/Sorts.md)
+9. [Various soring algorithms](Algorithms/Sorts/)
     1. Bubble sort
     2. Selection sort
     3. Insertion sort
@@ -45,5 +45,5 @@ Plan is to implement all these at least in following languages, IF there's enoug
 5. Priority queue
 6. Queue
 7. [Set](Data%20structures/Set/)
-8. [Stack](Data%20structures/Stack/Stack.md)
-9. [Vector](Data%20structures/Vector/Vector.md)
+8. [Stack](Data%20structures/Stack/)
+9. [Vector](Data%20structures/Vector/)
