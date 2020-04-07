@@ -28,12 +28,12 @@ Plan is to implement all these at least in following languages, IF there's enoug
 7. Floyd-Warshall algorithm
 8. K-Way merge
 9. [Various soring algorithms](Algorithms\Sorts\Sorts.md)
-    9.1 Bubble sort
-    9.2 Selection sort
-    9.3 Insertion sort
-    9.4 In-place quick sort
-    9.5 Bucket sort
-    9.6 Radix sort
+    1. Bubble sort
+    2. Selection sort
+    3. Insertion sort
+    4. In-place quick sort
+    5. Bucket sort
+    6. Radix sort
 10. Travelling Salesman
 
 ## Data structures
