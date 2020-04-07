@@ -16,7 +16,15 @@ class StackNode<T> {
     return this.next;
   }
 
+  set next(nxt: StackNode<T> | undefined) {
+    this.nxt = nxt;
+  }
+
 }
+
+// This is here, because I would like to use this type to exclude StackNode itself
+// from allowed types for StackNode value. But I run to problems all the time I try
+// to use it
 
 // type notStackNode<T> = T extends StackNode<T> ? never : T;
 

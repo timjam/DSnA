@@ -36,15 +36,15 @@ describe('Stack unit tests', () => {
   });
 
   it('size', () => {
-    expect(stack.getSize()).toBe(3);
-    expect(emptyStack.getSize()).toBe(0);
-    expect(fullStack.getSize()).toBe(3);
+    expect(stack.size).toBe(3);
+    expect(emptyStack.size).toBe(0);
+    expect(fullStack.size).toBe(3);
   });
 
   it('capacity', () => {
-    expect(stack.getCapacity()).toBe(10);
-    expect(emptyStack.getCapacity()).toBe(10);
-    expect(fullStack.getCapacity()).toBe(3);
+    expect(stack.capacity).toBe(10);
+    expect(emptyStack.capacity).toBe(10);
+    expect(fullStack.capacity).toBe(3);
   });
 
   it('flush', () => {
