@@ -8,15 +8,7 @@ class Stack<T> {
   
   constructor(cpacity: number, initialValues?: Array<T>) {
     this.cpacity = cpacity;
-
-    if (initialValues) {
-      this.sze = initialValues.length;
-      initialValues.forEach(item => {
-        this.push(item)
-        this.sze += 1;
-      });
-    }
-
+    initialValues?.forEach(item => this.push(item));
   };
 
   private _deleteAll(node: StackNode<T> | undefined): void {

@@ -9,11 +9,11 @@ class StackNode<T> {
   }
 
   get value(): T {
-    return this.value;
+    return this.val;
   }
 
   get next(): StackNode<T> | undefined {
-    return this.next;
+    return this.nxt;
   }
 
   set next(nxt: StackNode<T> | undefined) {
