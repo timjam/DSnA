@@ -44,6 +44,6 @@ Plan is to implement all these at least in following languages, IF there's enoug
 4. Linked list
 5. Priority queue
 6. Queue
-7. Set
+7. [Set](Data%20structures/Set/)
 8. [Stack](Data%20structures/Stack/Stack.md)
 9. [Vector](Data%20structures/Vector/Vector.md)
