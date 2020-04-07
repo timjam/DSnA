@@ -1,6 +1,6 @@
 import 'jest'
 import Stack from './Stack';
-import StackNode from './StackNode';
+// import StackNode from './StackNode';
 
 describe('Stack unit tests', () => {
 
@@ -9,20 +9,21 @@ describe('Stack unit tests', () => {
   const fullStack = new Stack(3, ['1', '2', '3']);
 
   it('push', () => {
-    expect(stack.push('7')).toEqual(new Stack(10, ['1', '2', '3', '7']));
+    stack.push('7');
+    expect(stack).toEqual(new Stack(10, ['1', '2', '3', '7']));
   })
 
   it('push to full', () => {
-    expect(fullStack.push('7')).toThrowError('Stack is full');
+    expect(() => fullStack.push('7')).toThrowError('Stack is full');
   });
 
   it('pop', () => {
-    expect(stack.pop()).toBe('3');
-    expect(stack).toEqual(new Stack(10, ['1','2']));
+    expect(stack.pop()).toBe('7');
+    expect(stack).toEqual(new Stack(10, ['1', '2', '3']));
   });
 
   it('pop from empty', () => {
-    expect(emptyStack.pop()).toThrowError('Can not pop from empty stack');
+    expect(() => emptyStack.pop()).toThrowError('Can not pop from empty stack');
   });
 
   it('isEmpty', () => {
@@ -48,7 +49,8 @@ describe('Stack unit tests', () => {
   });
 
   it('flush', () => {
-    expect(stack.flush()).toEqual(emptyStack);
+    stack.flush();
+    expect(stack).toEqual(emptyStack);
   });
 
 });
