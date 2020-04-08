@@ -5,7 +5,9 @@ describe('Set unit tests', () => {
   
   it('constructor', () => {
     const testSet = new Set([1, 2, 3, 4, 4, 5, 5, 6]);
+    const emptySet = new Set();
     expect(testSet).toBeInstanceOf(Set);
+    expect(emptySet).toBeInstanceOf(Set);
     expect(testSet).toEqual(new Set([1, 2, 3, 4, 5, 6]));
   })
 
@@ -33,11 +35,11 @@ describe('Set unit tests', () => {
   });
 
   it('union', () => {
-    expect(testSet.union(testSet2)).toEqual(new Set[1, 2, 3, 4, 5, 6, 7, 13, 14]);
+    expect(testSet.union(testSet2)).toEqual(new Set([1, 2, 3, 4, 5, 6, 7, 13, 14]));
   });
 
   it('intersect', () => {
-    expect(testSet.intersect(testSet2)).toEqual(new Set[1, 5]);
+    expect(testSet.intersect(testSet2)).toEqual(new Set([1, 5]));
   });
 
   it('subtract', () => {
