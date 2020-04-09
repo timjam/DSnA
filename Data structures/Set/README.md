@@ -15,4 +15,4 @@ Usually set supports at least following methods:
 
 ## TypeScript
 
-... maybe something about the TS implementation at some point
+I tried to write this implementation without using the TS/JS array methods, because some of them are already methods that could be used in Set itself too. In the end of the day some methods use these array methods and the whole implementation of this Set is very questionable and at some points uses very weird methods. After all I wanted to get this done and move to next DS.
