@@ -6,7 +6,7 @@ Started this project during the Covid-19 Stay Home period to have something mean
 
 Plan is to implement all these at least in following languages, IF there's enough time
 
-1. [ ] ES6 TypeScript
+1. [ ] TypeScript (ES6)
 2. [ ] Python 3
 3. [ ] Java
 4. [ ] C++
