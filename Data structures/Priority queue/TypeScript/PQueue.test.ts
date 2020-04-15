@@ -35,26 +35,31 @@ describe('Priority Queue unit tests', () => {
   
   it('enqueue', () => {
     pqueue.enqueue([1234], 2);
-    // expect(pqueue).toEqual(new PQueuee([['test', 4], [123, 2], [{ asd: { a: () => console.log('test'), b: '123' } }, 1], [[1234], 2]]));
-    pqueue.enqueue('asd', 1);
-    // expect(pqueue).toEqual(new PQueuee([['asd', 1], ['test', 4], [123, 2], [{ asd: { a: () => console.log('test'), b: '123' } }, 1], [[1234], 2]]));
+    pqueue.enqueue('asdasd', 1);
     pqueue2.enqueue('anothertest', 1);
-    // expect(pqueue2).toEqual(new PQueuee<string>('test', 4, 'anothertest', 1));
   });
   
   it('dequeue', () => {
-    // const next1 = pqueue.dequeue({ asd: { a: () => console.log('test'), b: '123' } });
+    const next1 = pqueue.dequeue();
     const next2 = pqueue2.dequeue();
     const next3 = emptypq.dequeue();
-    // expect(next1).toEqual({});
+    expect(next1).toEqual(testobj);
     expect(next2).toBe('anothertest');
     expect(next3).toBeUndefined();
   });
   
   it('peek', () => {
-    expect(pqueue.peek).toBe('asd');
+    expect(pqueue.peek).toBe('asdasd');
     expect(pqueue2.peek).toBe('test');
     expect(emptypq.peek).toBeUndefined();
   });
+
+  it('extras', () => {
+    const n1 = pqueue.dequeue();
+    const n2 = pqueue.dequeue();
+    expect(n1).toBe('asdasd');
+    expect(n2).toBe(123);
+    expect(pqueue.peek).toEqual([1234]);
+  })
 
 });
