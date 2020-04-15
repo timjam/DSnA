@@ -42,7 +42,7 @@ Plan is to implement all these at least in following languages, IF there's enoug
 2. Circular queue
 3. Hash map
 4. Linked list
-5. Priority queue
+5. [Priority queue](Data%20structures/Priority%20queue/)
 6. [Queue](Data%20structures/Queue/)
 7. [Set](Data%20structures/Set/)
 8. [Stack](Data%20structures/Stack/)
