@@ -41,7 +41,7 @@ Plan is to implement all these at least in following languages, IF there's enoug
 1. Binary search tree
 2. Circular queue
 3. Hash map
-4. Linked list
+4. [Linked list](Data%20structures/Linked%20list/)
 5. [Priority queue](Data%20structures/Priority%20queue/)
 6. [Queue](Data%20structures/Queue/)
 7. [Set](Data%20structures/Set/)
